@@ -1,0 +1,46 @@
+header {
+    background-color: white;
+    border-radius: 30px;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+
+        // img {
+        //     width: 75px;
+        //     height: auto;
+        // }
+
+        ul {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 15px;
+            list-style-type: none;
+
+            li {
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: #4f172c;
+                    transition: all 0.5s;
+                    padding: 10px;
+
+                    &:hover, &:focus {
+                        background-color: #4f172c;
+                        color: #eee;
+                    }
+                    
+                }
+                &.current_page_item a {
+                    font-weight: bold;
+                    pointer-events: none;
+                    border-bottom: 2px solid #4f172c;
+                }
+            }
+        }
+    }
+
+}
